@@ -42,5 +42,14 @@ def convert_markdown_to_html(input_dir, output_dir):
                 print(f"Converted: {input_path} -> {output_path}")
 
 if __name__ == "__main__":
+    # get argv
+    import sys
+    if len(sys.argv) > 1:
+        BASE_DIR = sys.argv[1]
+    else:
+        BASE_DIR = os.path.dirname(__file__)
+        
+    INPUT_DIR = os.path.join(BASE_DIR, INPUT_DIR)
+    OUTPUT_DIR = os.path.join(BASE_DIR, OUTPUT_DIR)
     # Run the conversion
     convert_markdown_to_html(INPUT_DIR, OUTPUT_DIR)
