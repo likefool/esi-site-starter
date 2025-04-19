@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <title>{{ filename | replace("/", " | ") }}</title>
+  <meta name="description" content="Content for {{ filename }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/assets/output.css" rel="stylesheet">
+</head>
+<body class="prose mx-auto px-4 py-8">
+    <h1>Post: {{ filename | replace("/", " | ") }}</h1>
+    <!-- Dynamically include the file using ESI -->
+    <esi:include src="/content/{{ filename }}.html" />
+</body>
+</html>
