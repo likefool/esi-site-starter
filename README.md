@@ -14,3 +14,14 @@ Run the script using Python:
 ```
 python convert_markdown.py
 ```
+
+## flow
+- inside container
+- a script
+1. checkout md from another repo
+1. cp to content
+1. run convert
+- 5min cron 
+
+
+
