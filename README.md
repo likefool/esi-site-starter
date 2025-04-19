@@ -15,6 +15,12 @@ Run the script using Python:
 python convert_markdown.py
 ```
 
+## deploy
+```
+docker build -t esi-site .
+docker run -p 127.0.0.1:18000:18000 esi-site
+```
+
 ## flow
 - inside container
 - a script

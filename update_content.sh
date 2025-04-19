@@ -26,7 +26,7 @@ cp -r "$TEMP_DIR"/* ./content/
 # Run conversion (replace this with your actual conversion command)
 echo "Running conversion process..."
 
-python convert_markdown.py /app
+python3 convert_markdown.py /app
 # Example conversion command - update this with your actual conversion logic
 # python convert_md_to_html.py ./content
 
